@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vMqp0KZSftHhej7trSI+5KPyBHOnsmg8MsD77vDNWqJFR5W1kGKSLv8gdkNNschU6QytwFROkdhdU5LAst4L5g==",
+  "dgSpecHash": "sIwozFJlSEA=",
   "success": true,
-  "projectFilePath": "/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Curricularizacao.csproj",
-  "expectedPackageFiles": [
-    "/home/barba/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\mv_fu\\ProjetoCurricularizacao\\OutroProjetoParaCurricularizacao3\\Curricularizacao\\Curricularizacao.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
