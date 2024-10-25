@@ -13,5 +13,5 @@ public class Matricula
     public int AlunoId { get; set; }
 
     public Turma? Turma { get; set; }
-    public int TurmaId { get; set; }
+    
 }
