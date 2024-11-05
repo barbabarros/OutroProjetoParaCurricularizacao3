@@ -1,17 +1,12 @@
-using System;
-using System.ComponentModel.DataAnnotations;
-
-
 namespace Curricularizacao.Models;
 
-public class Matricula
-{
-    [Key]
-    public int Id { get; set; }
+    public class Matricula
+    {
+        public int Id { get; set; }
+        public int AtividadeId { get; set; }
+        public Atividade? Atividade { get; set; }
+        public int AlunoId { get; set; }
+        public Aluno? Aluno { get; set; }
+        public DateTime DataMatricula { get; set; } = DateTime.Now;
+    }
 
-    public Aluno? Aluno { get; set; }
-    public int AlunoId { get; set; }
-
-    public Turma? Turma { get; set; }
-    
-}

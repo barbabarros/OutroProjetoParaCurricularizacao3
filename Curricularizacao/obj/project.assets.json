@@ -8,27 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mv_fu\\.nuget\\packages\\": {}
+    "/home/barba/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mv_fu\\ProjetoCurricularizacao\\OutroProjetoParaCurricularizacao3\\Curricularizacao\\Curricularizacao.csproj",
+      "projectUniqueName": "/home/barba/Documents/projeto29382/OutroProjetoParaCurricularizacao3/Curricularizacao/Curricularizacao.csproj",
       "projectName": "Curricularizacao",
-      "projectPath": "C:\\Users\\mv_fu\\ProjetoCurricularizacao\\OutroProjetoParaCurricularizacao3\\Curricularizacao\\Curricularizacao.csproj",
-      "packagesPath": "C:\\Users\\mv_fu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mv_fu\\ProjetoCurricularizacao\\OutroProjetoParaCurricularizacao3\\Curricularizacao\\obj\\",
+      "projectPath": "/home/barba/Documents/projeto29382/OutroProjetoParaCurricularizacao3/Curricularizacao/Curricularizacao.csproj",
+      "packagesPath": "/home/barba/.nuget/packages/",
+      "outputPath": "/home/barba/Documents/projeto29382/OutroProjetoParaCurricularizacao3/Curricularizacao/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mv_fu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/barba/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -41,11 +38,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -62,6 +54,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.10, 8.0.10]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -70,7 +68,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.110/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
