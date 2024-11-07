@@ -1,0 +1,20 @@
+@model Curricularizacao.Models.Atividade
+@{
+    ViewData["Title"] = "Editar Atividade";
+}
+
+<h2>Editar Atividade</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Descricao"></label>
+        <input asp-for="Descricao" class="form-control" />
+        <span asp-validation-for="Descricao" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+<a asp-action="Index" class="btn btn-secondary">Voltar</a>
