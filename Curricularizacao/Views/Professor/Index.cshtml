@@ -1,0 +1,32 @@
+@model List<Curricularizacao.Models.Professor>
+@{
+    ViewData["Title"] = "Professores";
+}
+
+<a asp-action="Create" class="btn btn-primary">Adicionar Professor</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var professor in Model)
+        {
+            <tr>
+                <td>@professor.Id</td>
+                <td>@professor.Nome</td>
+                <td>@professor.Telefone</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@professor.Id" class="btn btn-info">Detalhes</a> | 
+                    <a asp-action="Edit" asp-route-id="@professor.Id" class="btn btn-warning">Editar</a> | 
+                    <a asp-action="Delete" asp-route-id="@professor.Id" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
