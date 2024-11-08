@@ -1,0 +1,33 @@
+@model List<Curricularizacao.Models.Matricula>
+@{
+    ViewData["Title"] = "Matrículas";
+}
+
+<a asp-action="Create" class="btn btn-primary">Adicionar Matrícula</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Atividade</th>
+            <th>Aluno</th>
+            <th>Data Matrícula</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var matricula in Model)
+        {
+            <tr>
+                <td>@matricula.Id</td>
+                <td>@matricula.Atividade?.Descricao</td>
+                <td>@matricula.Aluno?.Nome</td>
+                <td>@matricula.DataMatricula.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@matricula.Id" class="btn btn-info">Detalhes</a> | 
+                    <a asp-action="Delete" asp-route-id="@matricula.Id" class="btn btn-danger">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

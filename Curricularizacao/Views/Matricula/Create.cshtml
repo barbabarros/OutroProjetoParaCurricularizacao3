@@ -1,0 +1,29 @@
+@model Curricularizacao.Models.Matricula
+@{
+    ViewData["Title"] = "Adicionar Matrícula";
+}
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="AlunoId"></label>
+            <select asp-for="AlunoId" class="form-control">
+                @foreach (var aluno in ViewBag.Alunos)
+                {
+                    <option value="@aluno.Id">@aluno.Nome</option>
+                }
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Atividades</label>
+            <select asp-for="AtividadeId" class="form-control">
+                @foreach (var atividade in ViewBag.Atividades)
+                {
+                    <option value="@atividade.Id">@atividade.Descricao</option>
+                }
+            </select>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+
+</form>
