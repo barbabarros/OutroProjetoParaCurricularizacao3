@@ -79,6 +79,6 @@ namespace Curricularizacao.Controllers
             var atividade = _dataRepository.Atividades.FirstOrDefault(a => a.Id == id);
             if (atividade == null) return NotFound();
             return View(atividade);
- }
-}
+        }
+    }
 }

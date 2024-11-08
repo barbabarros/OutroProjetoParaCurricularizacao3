@@ -84,6 +84,6 @@ namespace Curricularizacao.Controllers
             var matricula = _dataRepository.Matriculas.FirstOrDefault(m => m.Id == id);
             if (matricula == null) return NotFound();
             return View(matricula);
- }
-}
+        }
+    }
 }

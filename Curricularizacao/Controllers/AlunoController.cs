@@ -79,6 +79,6 @@ namespace Curricularizacao.Controllers
             var aluno = _dataRepository.Alunos.FirstOrDefault(a => a.Id == id);
             if (aluno == null) return NotFound();
             return View(aluno);
-}
-}
+        }
+    }
 }

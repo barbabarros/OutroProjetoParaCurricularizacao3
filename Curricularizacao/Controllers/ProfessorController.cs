@@ -79,6 +79,6 @@ namespace Curricularizacao.Controllers
             var professor = _dataRepository.Professores.FirstOrDefault(p => p.Id == id);
             if (professor == null) return NotFound();
             return View(professor);
- }
-}
+        }
+    }
 }

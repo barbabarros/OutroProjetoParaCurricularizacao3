@@ -1,107 +1,135 @@
 is_global = true
 build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
 build_property.TargetPlatformMinVersion = 
 build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Curricularizacao
 build_property.RootNamespace = Curricularizacao
-build_property.ProjectDir = C:\Users\mv_fu\OneDrive\Documentos\projetocurricu\OutroProjetoParaCurricularizacao3\Curricularizacao\
+build_property.ProjectDir = /home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mv_fu\OneDrive\Documentos\projetocurricu\OutroProjetoParaCurricularizacao3\Curricularizacao
+build_property.MSBuildProjectDirectory = /home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cQ3JlYXRlLmNzaHRtbA==
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRGVsZXRlLmNzaHRtbA==
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRGV0YWlscy5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRWRpdC5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Aluno/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRpdmlkYWRlXENyZWF0ZS5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRpdmlkYWRlL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRpdmlkYWRlXERlbGV0ZS5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRpdmlkYWRlL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRpdmlkYWRlXERldGFpbHMuY3NodG1s
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRpdmlkYWRlL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRpdmlkYWRlXEVkaXQuY3NodG1s
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRpdmlkYWRlL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRpdmlkYWRlXEluZGV4LmNzaHRtbA==
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Atividade/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQXRpdmlkYWRlL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXENyZWF0ZS5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Matricula/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERlbGV0ZS5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Matricula/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXERldGFpbHMuY3NodG1s
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Matricula/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEVkaXQuY3NodG1s
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Matricula/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzc29yXEluZGV4LmNzaHRtbA==
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Matricula/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yL0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mv_fu/OneDrive/Documentos/projetocurricu/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-0mfmwme4ep
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Professor/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZmVzc29yL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-78oys81tak

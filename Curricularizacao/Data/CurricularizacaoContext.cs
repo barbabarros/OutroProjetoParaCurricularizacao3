@@ -8,6 +8,6 @@ namespace Curricularizacao.Data
         public DbSet<Aluno>? Alunos { get; set; }
         public DbSet<Professor>? Professores { get; set; }
         public DbSet<Atividade>? Atividades { get; set; }
-        public DbSet<Matricula>? Matriculas { get; set; }
-    }
+        public DbSet<Matricula>? Matriculas { get; set; }
+    }
 }
