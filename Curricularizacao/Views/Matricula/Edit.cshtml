@@ -1,0 +1,30 @@
+@model Curricularizacao.Models.Matricula
+@{
+    ViewData["Title"] = "Editar Matrícula";
+}
+
+<h2>Editar Matrícula</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="AtividadeId"></label>
+        <select asp-for="AtividadeId" class="form-control" asp-items="@(new SelectList(ViewBag.Atividades, "Id", "Descricao", Model.AtividadeId))">
+            <option value="">Selecione uma Atividade</option>
+        </select>
+        <span asp-validation-for="AtividadeId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="AlunoId"></label>
+        <select asp-for="AlunoId" class="form-control" asp-items="@(new SelectList(ViewBag.Alunos, "Id", "Nome", Model.AlunoId))">
+            <option value="">Selecione um Aluno</option>
+        </select>
+        <span asp-validation-for="AlunoId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
+
+<a asp-action="Index" class="btn btn-secondary">Voltar</a>

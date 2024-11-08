@@ -1,0 +1,25 @@
+@model Curricularizacao.Models.Matricula
+@{
+    ViewData["Title"] = "Excluir Matrícula";
+}
+
+<h2>Excluir Matrícula</h2>
+
+<div>
+    <h4>Você tem certeza que deseja excluir esta matrícula?</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">ID</dt>
+        <dd class="col-sm-10">@Model.Id</dd>
+        <dt class="col-sm-2">Atividade</dt>
+        <dd class="col-sm-10">@Model.Atividade?.Descricao</dd>
+        <dt class="col-sm-2">Aluno</dt>
+        <dd class="col-sm-10">@Model.Aluno?.Nome</dd>
+    </dl>
+</div>
+
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Excluir</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+</form>
