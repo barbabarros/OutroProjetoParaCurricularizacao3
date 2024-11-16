@@ -1,18 +1,11 @@
 @model Curricularizacao.Models.Atividade
+
 @{
     ViewData["Title"] = "Detalhes da Atividade";
 }
 
-<h2>Detalhes da Atividade</h2>
+<p><strong>Descrição:</strong> @Model.Descricao</p>
+<p><strong>Número Máximo de Alunos:</strong> @ViewBag.MaxAlunos</p>
+<p><strong>Quantidade de Alunos Matriculados:</strong> @ViewBag.NumeroMatriculados</p>
 
-<div>
-    <hr />
-    <dl class="row">
-        <dt class="col-sm-2">ID</dt>
-        <dd class="col-sm-10">@Model.Id</dd>
-        <dt class="col-sm-2">Descrição</dt>
-        <dd class="col-sm-10">@Model.Descricao</dd>
-    </dl>
-</div>
-
-<a asp-action="Index" class="btn btn-secondary">Voltar</a>
+<a href="@Url.Action("Index", "Atividade")" class="btn btn-primary">Voltar para lista de Atividades</a>

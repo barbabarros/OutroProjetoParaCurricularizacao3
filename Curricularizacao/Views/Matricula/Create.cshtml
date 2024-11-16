@@ -1,27 +1,66 @@
 @model Curricularizacao.Models.Matricula
+
 @{
-    ViewData["Title"] = "Adicionar Matrícula";
+    ViewData["Title"] = "Criar Matrícula";
 }
 
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="AlunoId"></label>
-        <select asp-for="AlunoId" class="form-control">
-            @foreach (var aluno in ViewBag.Alunos)
-            {
-                <option value="@aluno.Id">@aluno.Nome</option>
-            }
-        </select>
+<h1>@ViewData["Title"]</h1>
+
+@foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+{
+    <div class="alert alert-danger">
+        @error.ErrorMessage
     </div>
+}
+
+<h4>Matrícula</h4>
+<hr />
+<form asp-action="Create">
     <div class="form-group">
-        <label>Atividades</label>
-        <select asp-for="AtividadeId" class="form-control">
-            @foreach (var atividade in ViewBag.Atividades)
-            {
-                <option value="@atividade.Id">@atividade.Descricao</option>
-            }
+        <label asp-for="AlunoId" class="control-label"></label>
+        <select asp-for="AlunoId" class="form-control" asp-items="@(new SelectList(ViewBag.Alunos, "Id", "Nome"))">
+            <option value="">Selecione um aluno</option>
         </select>
+        <span asp-validation-for="AlunoId" class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-success">Salvar</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+
+    <div class="form-group">
+        <label asp-for="AtividadeId" class="control-label"></label>
+        <select asp-for="AtividadeId" class="form-control" asp-items="@(new SelectList(ViewBag.Atividades, "Id", "Descricao"))">
+            <option value="">Selecione uma atividade</option>
+        </select>
+        <span asp-validation-for="AtividadeId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Alunos já matriculados:</label>
+        <span id="alunosMatriculados" class="form-control-plaintext">
+        </span>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Matricular</button>
+    </div>
 </form>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
+</div>
+
+@section Scripts {
+    <script>
+        document.querySelector("select[name='AtividadeId']").addEventListener("change", function () {
+            var atividadeId = this.value;
+            var matriculasPorAtividade = @Html.Raw(Json.Serialize(ViewBag.MatriculasPorAtividade));
+            var numeroMatriculas = matriculasPorAtividade[atividadeId] || 0;
+            document.getElementById("alunosMatriculados").innerText = numeroMatriculas;
+        });
+
+        window.addEventListener("load", function () {
+            var atividadeId = document.querySelector("select[name='AtividadeId']").value;
+            var matriculasPorAtividade = @Html.Raw(Json.Serialize(ViewBag.MatriculasPorAtividade));
+            var numeroMatriculas = matriculasPorAtividade[atividadeId] || 0;
+            document.getElementById("alunosMatriculados").innerText = numeroMatriculas;
+        });
+    </script>
+}

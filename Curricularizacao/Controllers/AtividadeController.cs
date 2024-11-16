@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Curricularizacao.Models;
 using Curricularizacao;
+using Microsoft.EntityFrameworkCore;
 
 namespace Curricularizacao.Controllers
 {
@@ -76,8 +77,17 @@ namespace Curricularizacao.Controllers
 
         public IActionResult Details(int id)
         {
-            var atividade = _dataRepository.Atividades.FirstOrDefault(a => a.Id == id);
+            var atividade = _dataRepository.Atividades
+                .Include(a => a.Matriculas)
+                .FirstOrDefault(a => a.Id == id);
+
             if (atividade == null) return NotFound();
+
+            int numeroMatriculados = atividade.Matriculas?.Count() ?? 0;
+
+            ViewBag.NumeroMatriculados = numeroMatriculados;
+            ViewBag.MaxAlunos = atividade.MaxParticipantes;
+
             return View(atividade);
         }
     }

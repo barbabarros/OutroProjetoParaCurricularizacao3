@@ -21,22 +21,60 @@ namespace Curricularizacao.Controllers
 
         public IActionResult Create()
         {
-            ViewBag.Alunos = _dataRepository.Alunos.ToList();
-            ViewBag.Atividades = _dataRepository.Atividades.ToList();
+            var alunos = _dataRepository.Alunos.ToList();
+            var atividades = _dataRepository.Atividades.ToList();
+
+            ViewBag.Alunos = alunos;
+            ViewBag.Atividades = atividades;
+
+            ViewBag.MatriculasPorAtividade = atividades.ToDictionary(
+                a => a.Id,
+                a => _dataRepository.Matriculas.Count(m => m.AtividadeId == a.Id)
+            );
+
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Matricula matricula)
+{
+        if (ModelState.IsValid)
         {
-            if (ModelState.IsValid)
+            var alunoMatriculado = _dataRepository.Matriculas
+                .Any(m => m.AlunoId == matricula.AlunoId && m.AtividadeId == matricula.AtividadeId);
+
+            if (alunoMatriculado)
             {
-                _dataRepository.AddMatricula(matricula);
-                return RedirectToAction("Index");
+                ModelState.AddModelError("", "Este aluno já está matriculado nesta atividade.");
             }
-            return View(matricula);
+            else
+            {
+                var atividade = _dataRepository.Atividades
+                    .FirstOrDefault(a => a.Id == matricula.AtividadeId);
+
+                if (atividade != null && atividade.MaxParticipantes > 0)
+                {
+                    var numeroMatriculados = _dataRepository.Matriculas
+                        .Count(m => m.AtividadeId == matricula.AtividadeId);
+
+                    if (numeroMatriculados >= atividade.MaxParticipantes)
+                    {
+                        ModelState.AddModelError("", "Não há vagas disponíveis para essa atividade.");
+                    }
+                    else
+                    {
+                        _dataRepository.AddMatricula(matricula);
+                        return RedirectToAction("Index");
+                    }
+                }
+            }
         }
+
+        ViewBag.Alunos = _dataRepository.Alunos.ToList();
+        ViewBag.Atividades = _dataRepository.Atividades.ToList();
+        return View(matricula);
+    }
 
         public IActionResult Edit(int id)
         {
