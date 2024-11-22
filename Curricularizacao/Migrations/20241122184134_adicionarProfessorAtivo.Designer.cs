@@ -4,6 +4,7 @@ using Curricularizacao.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Curricularizacao.Migrations
 {
     [DbContext(typeof(CurricularizacaoContext))]
-    partial class CurricularizacaoContextModelSnapshot : ModelSnapshot
+    [Migration("20241122184134_adicionarProfessorAtivo")]
+    partial class adicionarProfessorAtivo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

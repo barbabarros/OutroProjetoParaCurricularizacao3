@@ -8,5 +8,6 @@ namespace Curricularizacao.Models
         public List<Professor> Professores { get; set; } = new List<Professor>();
         public List<int> ProfessorIds { get; set; } = new List<int>();
         public List<Matricula> Matriculas { get; set; } = new List<Matricula>();
+        
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qpX6PWD7RVMThBndRscZD/YcmSoyCxq+ofCo4wC1qLI=",
+  "Hash": "Obdu4Rw71dCwd7NVHMEZOyphKzI8PDn10XSPJf3vWYI=",
   "Source": "Curricularizacao",
   "BasePath": "_content/Curricularizacao",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Identity": "/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/wwwroot/logo.png",
+      "SourceId": "Curricularizacao",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/barba/Documents/OutroProjetoParaCurricularizacao3/Curricularizacao/wwwroot/",
+      "BasePath": "_content/Curricularizacao",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/logo.png"
     }
   ]
 }

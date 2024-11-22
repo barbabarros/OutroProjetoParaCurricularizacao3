@@ -3,8 +3,6 @@
     ViewData["Title"] = "Adicionar Professor";
 }
 
-<h2>Adicionar Professor</h2>
-
 <form asp-action="Create">
     <div class="form-group">
         <label asp-for="Nome"></label>
@@ -16,7 +14,9 @@
         <input asp-for="Telefone" class="form-control" />
         <span asp-validation-for="Telefone" class="text-danger"></span>
     </div>
+    <br>
     <button type="submit" class="btn btn-primary">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary">Voltar</a>
 </form>
 
-<a asp-action="Index" class="btn btn-secondary">Voltar</a>
+

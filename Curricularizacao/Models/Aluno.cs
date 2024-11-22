@@ -10,4 +10,5 @@ public class Aluno
     public string NomePai { get; set; } = string.Empty;
     public string Telefone { get; set; } = string.Empty;
     public DateTime DataNascimento { get; set; }
+    public bool Ativo { get; set; } = true;
 }

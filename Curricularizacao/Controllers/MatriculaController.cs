@@ -38,43 +38,51 @@ namespace Curricularizacao.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(Matricula matricula)
-{
-        if (ModelState.IsValid)
         {
-            var alunoMatriculado = _dataRepository.Matriculas
-                .Any(m => m.AlunoId == matricula.AlunoId && m.AtividadeId == matricula.AtividadeId);
-
-            if (alunoMatriculado)
+            if (ModelState.IsValid)
             {
-                ModelState.AddModelError("", "Este aluno já está matriculado nesta atividade.");
-            }
-            else
-            {
-                var atividade = _dataRepository.Atividades
-                    .FirstOrDefault(a => a.Id == matricula.AtividadeId);
-
-                if (atividade != null && atividade.MaxParticipantes > 0)
+                var aluno = _dataRepository.Alunos.FirstOrDefault(a => a.Id == matricula.AlunoId);
+                if (aluno == null || !aluno.Ativo)
                 {
-                    var numeroMatriculados = _dataRepository.Matriculas
-                        .Count(m => m.AtividadeId == matricula.AtividadeId);
+                    ModelState.AddModelError("", "Não é possível matricular um aluno inativo.");
+                }
+                else
+                {
+                    var alunoMatriculado = _dataRepository.Matriculas
+                        .Any(m => m.AlunoId == matricula.AlunoId && m.AtividadeId == matricula.AtividadeId);
 
-                    if (numeroMatriculados >= atividade.MaxParticipantes)
+                    if (alunoMatriculado)
                     {
-                        ModelState.AddModelError("", "Não há vagas disponíveis para essa atividade.");
+                        ModelState.AddModelError("", "Este aluno já está matriculado nesta atividade.");
                     }
                     else
                     {
-                        _dataRepository.AddMatricula(matricula);
-                        return RedirectToAction("Index");
+                        var atividade = _dataRepository.Atividades
+                            .FirstOrDefault(a => a.Id == matricula.AtividadeId);
+
+                        if (atividade != null && atividade.MaxParticipantes > 0)
+                        {
+                            var numeroMatriculados = _dataRepository.Matriculas
+                                .Count(m => m.AtividadeId == matricula.AtividadeId);
+
+                            if (numeroMatriculados >= atividade.MaxParticipantes)
+                            {
+                                ModelState.AddModelError("", "Não há vagas disponíveis para essa atividade.");
+                            }
+                            else
+                            {
+                                _dataRepository.AddMatricula(matricula);
+                                return RedirectToAction("Index");
+                            }
+                        }
                     }
                 }
             }
-        }
 
-        ViewBag.Alunos = _dataRepository.Alunos.ToList();
-        ViewBag.Atividades = _dataRepository.Atividades.ToList();
-        return View(matricula);
-    }
+            ViewBag.Alunos = _dataRepository.Alunos.ToList();
+            ViewBag.Atividades = _dataRepository.Atividades.ToList();
+            return View(matricula);
+        }
 
         public IActionResult Edit(int id)
         {
